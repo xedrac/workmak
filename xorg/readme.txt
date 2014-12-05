@@ -1,8 +1,9 @@
-Go to the directory where you have downloaded colemash:
-sudo cp xorg/colemash /etc/X11/xkb/symbols/colemash
-(for ubuntu 10.04) Type: sudo cp colemash /usr/share/X11/xkb/symbols/colemash
+Go to the directory where you have downloaded dash and install it to the proper location.  Some examples of common locations are:
 
-Type: setxkbmap -v colemash && xset r 66 
+sudo cp xorg/dash /etc/X11/xkb/symbols/dash
+sudo cp xorg/dash /usr/share/X11/xkb/symbols/dash
+
+Type: setxkbmap -v dash && xset r 66 
 
 You should get something similar to this:
 Warning! Multiple definitions of keyboard layout
@@ -11,7 +12,7 @@ Trying to build keymap using the following components:
 keycodes:   xfree86+aliases(qwerty)
 types:      complete
 compat:     complete
-symbols:    pc(pc105)+workman+level3(ralt_switch)
+symbols:    pc(pc105)+dash+level3(ralt_switch)
 geometry:   pc(pc105)
 To switch back to QWERTY type: 
 setxkbmap us; xset -r 66

@@ -1,5 +1,6 @@
 # $FreeBSD$
-# Colemash Layout
+# Based on FreeBSD's us.iso.kbd
+# Dash Layout
 #                                                         alt
 # scan                       cntrl          alt    alt   cntrl lock
 # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
@@ -21,9 +22,9 @@
   014   bs     bs     del    del    bs     bs     del    del     O
   015   ht     btab   nop    nop    ht     btab   nop    nop     O
   016   'q'    'Q'    dc1    dc1    'q'    'Q'    dc1    dc1     C
-  017   'w'    'W'    etb    etb    'w'    'W'    etb    etb     C
+  017   'd'    'D'    eot    eot    'd'    'D'    eot    eot     C
   018   'r'    'R'    dc2    dc2    'r'    'R'    dc2    dc2     C
-  019   'd'    'D'    eot    eot    'd'    'D'    eot    eot     C
+  019   'w'    'W'    etb    etb    'w'    'W'    etb    etb     C
   020   'p'    'P'    dle    dle    'p'    'P'    dle    dle     C
   021   'j'    'J'    nl     nl     'j'    'J'    nl     nl      C
   022   'l'    'L'    ff     ff     'l'    'L'    ff     ff      C
@@ -50,8 +51,8 @@
   043   '\'    '|'    fs     fs     '\'    '|'    fs     fs      O
   044   'z'    'Z'    sub    sub    'z'    'Z'    sub    sub     C
   045   'x'    'X'    can    can    'x'    'X'    can    can     C
-  046   'v'    'V'    syn    syn    'v'    'V'    syn    syn     C
-  047   'c'    'C'    etx    etx    'c'    'C'    etx    etx     C
+  046   'c'    'C'    etx    etx    'c'    'C'    etx    etx     C
+  047   'v'    'V'    syn    syn    'v'    'V'    syn    syn     C
   048   'b'    'B'    stx    stx    'b'    'B'    stx    stx     C
   049   'k'    'K'    vt     vt     'k'    'K'    vt     vt      C
   050   'm'    'M'    cr     cr     'm'    'M'    cr     cr      C

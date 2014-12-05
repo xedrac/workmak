@@ -1,4 +1,4 @@
-colemash
+Dash
 ========
 
-Colemash keyboard layout files/installers for various platforms
+Dash keyboard layout files/installers for various platforms

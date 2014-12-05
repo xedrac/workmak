@@ -1,28 +1,29 @@
 # $FreeBSD$
 # Based on FreeBSD's colemak.iso15.acc.kbd
-# Colemash Layout
+# Dash Layout
+
 #                                                         alt
 # scan                       cntrl          alt    alt   cntrl lock
 # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
 # ------------------------------------------------------------------
   041   '`'    '~'    nop    nop    dtil   '~'    nop    nop     O
-  002   '1'    '!'    nop    nop    '¡'    '¹'    nop    nop     O
-  003   '2'    '@'    nul    nul    'º'    '²'    nul    nul     O
-  004   '3'    '#'    nop    nop    'ª'    '³'    nop    nop     O
-  005   '4'    '$'    nop    nop    '¢'    '£'    nop    nop     O
-  006   '5'    '%'    nop    nop    '¤'    '¥'    nop    nop     O
-  007   '6'    '^'    rs     rs     '~'    '~'    rs     rs      O
-  008   '7'    '&'    nop    nop    'ð'    'Ð'    nop    nop     O
-  009   '8'    '*'    nop    nop    'þ'    'Þ'    nop    nop     O
-  010   '9'    '('    nop    nop    '~'    '~'    nop    nop     O
-  011   '0'    ')'    nop    nop    '~'    '~'    nop    nop     O
+  002   '!'    '1'    nop    nop    '¡'    '¹'    nop    nop     O
+  003   '@'    '2'    nul    nul    'º'    '²'    nul    nul     O
+  004   '#'    '3'    nop    nop    'ª'    '³'    nop    nop     O
+  005   '$'    '4'    nop    nop    '¢'    '£'    nop    nop     O
+  006   '%'    '5'    nop    nop    '¤'    '¥'    nop    nop     O
+  007   '^'    '6'    rs     rs     '~'    '~'    rs     rs      O
+  008   '&'    '7'    nop    nop    'ð'    'Ð'    nop    nop     O
+  009   '*'    '8'    nop    nop    'þ'    'Þ'    nop    nop     O
+  010   '('    '9'    nop    nop    '~'    '~'    nop    nop     O
+  011   ')'    '0'    nop    nop    '~'    '~'    nop    nop     O
   012   '-'    '_'    us     us     '~'    '~'    us     us      O
   013   '='    '+'    nop    nop    '×'    '÷'    nop    nop     O
 
   016   'q'    'Q'    dc1    dc1    'ä'    'Ä'    dc1    dc1     C
-  017   'w'    'W'    etb    etb    'å'    'Å'    etb    etb     C
+  017   'd'    'D'    eot    eot    duml   '~'    eot    eot     C
   018   'r'    'R'    dc2    dc2    dgra   '~'    dc2    dc2     C
-  019   'd'    'D'    eot    eot    duml   '~'    eot    eot     C
+  019   'w'    'W'    etb    etb    'å'    'Å'    etb    etb     C
   020   'p'    'P'    dle    dle    'ø'    'Ø'    dle    dle     C
   021   'j'    'J'    nl     nl     '~'    '~'    nl     nl      C
   022   'l'    'L'    ff     ff     '~'    '~'    ff     ff      C
@@ -47,8 +48,8 @@
 
   044   'z'    'Z'    sub    sub    'æ'    'Æ'    sub    sub     C
   045   'x'    'X'    can    can    dcir   '~'    can    can     C
-  046   'v'    'V'    syn    syn    '½'    '¼'    syn    syn     C
-  047   'c'    'C'    etx    etx    'ç'    'Ç'    etx    etx     C
+  046   'c'    'C'    etx    etx    'ç'    'Ç'    etx    etx     C
+  047   'v'    'V'    syn    syn    '½'    '¼'    syn    syn     C
   048   'b'    'B'    stx    stx    '~'    '~'    stx    stx     C
   049   'k'    'K'    vt     vt     drin   '~'    vt     vt      C
   050   'm'    'M'    cr     cr     '~'    '~'    cr     cr      C
