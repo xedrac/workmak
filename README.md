@@ -1,4 +1,4 @@
-Dash
+wormak
 ========
 
-Dash keyboard layout files/installers for various platforms
+Wormak keyboard layout files/installers for various platforms

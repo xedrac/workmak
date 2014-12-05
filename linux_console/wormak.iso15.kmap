@@ -1,4 +1,4 @@
-# dash.kmap for Linux console.
+# wormak.kmap for Linux console.
 
 alt_is_meta
 charset "iso-8859-15"  # use a ISO-8859-15 font, e.g.: consolechars -f lat9v-14
@@ -22,9 +22,9 @@ keycode  12 =          minus    underscore       asciitilde        asciitilde 	 
 keycode  13 =          equal          plus         multiply          division
                                                                                         
 keycode  16 =              q             Q       adiaeresis        Adiaeresis    Control_q
-keycode  17 =              d             D   dead_diaeresis        asciitilde    Control_d 
+keycode  17 =              w             W            aring             Aring    Control_w
 keycode  18 =              r             R       dead_grave        asciitilde    Control_r
-keycode  19 =              w             W            aring             Aring    Control_w
+keycode  19 =              d             D   dead_diaeresis        asciitilde    Control_d 
 keycode  20 =              p             P           oslash          Ooblique    Control_p
 keycode  21 =              j             J       asciitilde        asciitilde    Control_j 	       # dstroke                Dstroke
 keycode  22 =              l             L       asciitilde        asciitilde    Control_l             # lstroke                Lstroke
@@ -49,8 +49,8 @@ keycode  40 =     apostrophe      quotedbl           otilde            Otilde
 
 keycode  44 =              z             Z               ae                AE    Control_z
 keycode  45 =              x             X  dead_circumflex        asciitilde    Control_x
-keycode  46 =              c             C         ccedilla          Ccedilla    Control_c
-keycode  47 =              v             V               oe                OE    Control_v
+keycode  46 =              v             V               oe                OE    Control_v
+keycode  47 =              c             C         ccedilla          Ccedilla    Control_c
 keycode  48 =              b             B       asciitilde        asciitilde    Control_b             # dead_breve             asciitilde
 keycode  49 =              k             K       asciitilde        asciitilde    Control_k             # dead_abovering         asciitilde
 keycode  50 =              m             M       asciitilde        asciitilde    Control_m             # dead_macron            asciitilde
