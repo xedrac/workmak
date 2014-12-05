@@ -1,4 +1,4 @@
-colemash
+wormak
 ========
 
-Colemash keyboard layout files/installers for various platforms
+Wormak keyboard layout files/installers for various platforms

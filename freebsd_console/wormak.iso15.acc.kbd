@@ -1,22 +1,21 @@
 # $FreeBSD$
 # Based on FreeBSD's colemak.iso15.acc.kbd
-# Colemash Layout
-
+# Wormak Layout
 #                                                         alt
 # scan                       cntrl          alt    alt   cntrl lock
 # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
 # ------------------------------------------------------------------
   041   '`'    '~'    nop    nop    dtil   '~'    nop    nop     O
-  002   '!'    '1'    nop    nop    '¡'    '¹'    nop    nop     O
-  003   '@'    '2'    nul    nul    'º'    '²'    nul    nul     O
-  004   '#'    '3'    nop    nop    'ª'    '³'    nop    nop     O
-  005   '$'    '4'    nop    nop    '¢'    '£'    nop    nop     O
-  006   '%'    '5'    nop    nop    '¤'    '¥'    nop    nop     O
-  007   '^'    '6'    rs     rs     '~'    '~'    rs     rs      O
-  008   '&'    '7'    nop    nop    'ð'    'Ð'    nop    nop     O
-  009   '*'    '8'    nop    nop    'þ'    'Þ'    nop    nop     O
-  010   '('    '9'    nop    nop    '~'    '~'    nop    nop     O
-  011   ')'    '0'    nop    nop    '~'    '~'    nop    nop     O
+  002   '1'    '!'    nop    nop    '¡'    '¹'    nop    nop     O
+  003   '2'    '@'    nul    nul    'º'    '²'    nul    nul     O
+  004   '3'    '#'    nop    nop    'ª'    '³'    nop    nop     O
+  005   '4'    '$'    nop    nop    '¢'    '£'    nop    nop     O
+  006   '5'    '%'    nop    nop    '¤'    '¥'    nop    nop     O
+  007   '6'    '^'    rs     rs     '~'    '~'    rs     rs      O
+  008   '7'    '&'    nop    nop    'ð'    'Ð'    nop    nop     O
+  009   '8'    '*'    nop    nop    'þ'    'Þ'    nop    nop     O
+  010   '9'    '('    nop    nop    '~'    '~'    nop    nop     O
+  011   '0'    ')'    nop    nop    '~'    '~'    nop    nop     O
   012   '-'    '_'    us     us     '~'    '~'    us     us      O
   013   '='    '+'    nop    nop    '×'    '÷'    nop    nop     O
 

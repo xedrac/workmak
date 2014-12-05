@@ -1,22 +1,21 @@
 # $FreeBSD$
-# Based on FreeBSD's us.iso.kbd
-# Colemash Layout
+# Wormak Layout
 #                                                         alt
 # scan                       cntrl          alt    alt   cntrl lock
 # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
 # ------------------------------------------------------------------
   000   nop    nop    nop    nop    nop    nop    nop    nop     O
   001   esc    esc    esc    esc    esc    esc    debug  esc     O
-  002   '!'    '1'    nop    nop    '1'    '!'    nop    nop     O
-  003   '@'    '2'    nul    nul    '2'    '@'    nul    nul     O
-  004   '#'    '3'    nop    nop    '3'    '#'    nop    nop     O
-  005   '$'    '4'    nop    nop    '4'    '$'    nop    nop     O
-  006   '%'    '5'    nop    nop    '5'    '%'    nop    nop     O
-  007   '^'    '6'    rs     rs     '6'    '^'    rs     rs      O
-  008   '&'    '7'    nop    nop    '7'    '&'    nop    nop     O
-  009   '*'    '8'    nop    nop    '8'    '*'    nop    nop     O
-  010   '('    '9'    nop    nop    '9'    '('    nop    nop     O
-  011   ')'    '0'    nop    nop    '0'    ')'    nop    nop     O
+  002   '1'    '!'    nop    nop    '1'    '!'    nop    nop     O
+  003   '2'    '@'    nul    nul    '2'    '@'    nul    nul     O
+  004   '3'    '#'    nop    nop    '3'    '#'    nop    nop     O
+  005   '4'    '$'    nop    nop    '4'    '$'    nop    nop     O
+  006   '5'    '%'    nop    nop    '5'    '%'    nop    nop     O
+  007   '6'    '^'    rs     rs     '6'    '^'    rs     rs      O
+  008   '7'    '&'    nop    nop    '7'    '&'    nop    nop     O
+  009   '8'    '*'    nop    nop    '8'    '*'    nop    nop     O
+  010   '9'    '('    nop    nop    '9'    '('    nop    nop     O
+  011   '0'    ')'    nop    nop    '0'    ')'    nop    nop     O
   012   '-'    '_'    us     us     '-'    '_'    us     us      O
   013   '='    '+'    nop    nop    '='    '+'    nop    nop     O
   014   bs     bs     del    del    bs     bs     del    del     O

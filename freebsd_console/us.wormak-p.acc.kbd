@@ -1,25 +1,26 @@
 # $FreeBSD$
-# Colemash Layout
+# Based on FreeBSD's us.iso.acc.kbd
+# Wormak-P Layout
 #                                                         alt
 # scan                       cntrl          alt    alt   cntrl lock
 # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
 # ------------------------------------------------------------------
   000   nop    nop    nop    nop    nop    nop    nop    nop     O
-  001   esc    esc    esc    esc    esc    esc    debug  esc     O
-  002   '1'    '!'    nop    nop    '1'    '!'    nop    nop     O
-  003   '2'    '@'    nul    nul    '2'    '@'    nul    nul     O
-  004   '3'    '#'    nop    nop    '3'    '#'    nop    nop     O
-  005   '4'    '$'    nop    nop    '4'    '$'    nop    nop     O
-  006   '5'    '%'    nop    nop    '5'    '%'    nop    nop     O
-  007   '6'    '^'    rs     rs     '6'    '^'    rs     rs      O
-  008   '7'    '&'    nop    nop    '7'    '&'    nop    nop     O
-  009   '8'    '*'    nop    nop    '8'    '*'    nop    nop     O
-  010   '9'    '('    nop    nop    '9'    '('    nop    nop     O
-  011   '0'    ')'    nop    nop    '0'    ')'    nop    nop     O
+  001   esc    esc    esc    esc    esc    esc    debug  debug   O
+  002   '!'    '1'    nop    nop    '1'    '!'    nop    nop     O
+  003   '@'    '2'    nul    nul    '2'    '@'    nul    nul     O
+  004   '#'    '3'    nop    nop    '3'    '#'    nop    nop     O
+  005   '$'    '4'    nop    nop    '4'    '$'    nop    nop     O
+  006   '%'    '5'    nop    nop    '5'    '%'    nop    nop     O
+  007   '^'    '6'    rs     rs     '6'    dcir   rs     rs      O
+  008   '&'    '7'    nop    nop    '7'    '&'    nop    nop     O
+  009   '*'    '8'    nop    nop    '8'    drin   nop    nop     O
+  010   '('    '9'    nop    nop    '9'    '('    nop    nop     O
+  011   ')'    '0'    nop    nop    '0'    ')'    nop    nop     O
   012   '-'    '_'    us     us     '-'    '_'    us     us      O
   013   '='    '+'    nop    nop    '='    '+'    nop    nop     O
   014   bs     bs     del    del    bs     bs     del    del     O
-  015   ht     btab   nop    nop    ht     btab   nop    nop     O
+  015   ht     btab   nscr   nscr   ht     btab   nop    nop     O
   016   'q'    'Q'    dc1    dc1    'q'    'Q'    dc1    dc1     C
   017   'w'    'W'    etb    etb    'w'    'W'    etb    etb     C
   018   'r'    'R'    dc2    dc2    'r'    'R'    dc2    dc2     C
@@ -44,8 +45,8 @@
   037   'e'    'E'    enq    enq    'e'    'E'    enq    enq     C
   038   'i'    'I'    ht     ht     'i'    'I'    ht     ht      C
   039   'o'    'O'    si     si     'o'    'O'    si     si      C
-  040   '''    '"'    nop    nop    '''    '"'    nop    nop     O
-  041   '`'    '~'    nop    nop    '`'    '~'    nop    nop     O
+  040   '''    '"'    nop    nop    dacu   duml   nop    nop     O
+  041   '`'    '~'    nop    nop    dgra   dtil   nop    nop     O
   042   lshift lshift lshift lshift lshift lshift lshift lshift  O
   043   '\'    '|'    fs     fs     '\'    '|'    fs     fs      O
   044   'z'    'Z'    sub    sub    'z'    'Z'    sub    sub     C
@@ -55,13 +56,13 @@
   048   'b'    'B'    stx    stx    'b'    'B'    stx    stx     C
   049   'k'    'K'    vt     vt     'k'    'K'    vt     vt      C
   050   'm'    'M'    cr     cr     'm'    'M'    cr     cr      C
-  051   ','    '<'    nop    nop    ','    '<'    nop    nop     O
+  051   ','    '<'    nop    nop    dced   '<'    nop    nop     O
   052   '.'    '>'    nop    nop    '.'    '>'    nop    nop     O
   053   '/'    '?'    nop    nop    '/'    '?'    nop    nop     O
   054   rshift rshift rshift rshift rshift rshift rshift rshift  O
   055   '*'    '*'    '*'    '*'    '*'    '*'    '*'    '*'     O
   056   lalt   lalt   lalt   lalt   lalt   lalt   lalt   lalt    O
-  057   ' '    ' '    nul    ' '    ' '    ' '    susp   ' '     O
+  057   ' '    ' '    nul    nul    ' '    ' '    susp   susp    O
   058   clock  clock  clock  clock  clock  clock  clock  clock   O
   059   fkey01 fkey13 fkey25 fkey37 scr01  scr11  scr01  scr11   O
   060   fkey02 fkey14 fkey26 fkey38 scr02  scr12  scr02  scr12   O
@@ -96,7 +97,7 @@
   089   cr     cr     nl     nl     cr     cr     nl     nl      O
   090   rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl   O
   091   '/'    '/'    '/'    '/'    '/'    '/'    '/'    '/'     N
-  092   nscr   pscr   debug  debug  nop    nop    nop    nop     O
+  092   nscr   nscr   nop    nop    debug  debug  debug  debug   O
   093   ralt   ralt   ralt   ralt   ralt   ralt   ralt   ralt    O
   094   fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49  O
   095   fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50  O
@@ -106,10 +107,35 @@
   099   fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57  O
   100   fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58  O
   101   fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59  O
-  102   fkey60 paste  fkey60 fkey60 fkey60 fkey60 fkey60 fkey60  O
+  102   fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60  O
   103   fkey61 fkey61 fkey61 fkey61 fkey61 fkey61 boot   fkey61  O
-  104   slock  saver  slock  saver  susp   nop    susp   nop     O
+  104   saver  saver  susp   susp   nop    nop    susp   susp    O
   105   fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62  O
   106   fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63  O
   107   fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64  O
   108   nop    nop    nop    nop    nop    nop    nop    nop     O
+
+  dgra  '`'  ( 'a' 224 ) ( 'A' 192 ) ( 'e' 232 ) ( 'E' 200 ) 
+             ( 'i' 236 ) ( 'I' 204 ) ( 'o' 242 ) ( 'O' 210 ) 
+             ( 'u' 249 ) ( 'U' 217 )
+  dacu  180  ( 'a' 225 ) ( 'A' 193 ) ( 'e' 233 ) ( 'E' 201 ) 
+             ( 'i' 237 ) ( 'I' 205 ) ( 'o' 243 ) ( 'O' 211 ) 
+             ( 'u' 250 ) ( 'U' 218 ) ( 'y' 253 ) ( 'Y' 221 ) 
+  dcir  '^'  ( 'a' 226 ) ( 'A' 194 ) ( 'e' 234 ) ( 'E' 202 ) 
+             ( 'i' 238 ) ( 'I' 206 ) ( 'o' 244 ) ( 'O' 212 ) 
+             ( 'u' 251 ) ( 'U' 219 )
+  dtil  '~'  ( 'a' 227 ) ( 'A' 195 ) ( 'n' 241 ) ( 'N' 209 ) 
+             ( 'o' 245 ) ( 'O' 213 )
+  dmac  000
+  dbre  000
+  ddot  000
+  duml  168  ( 'a' 228 ) ( 'A' 196 ) ( 'e' 235 ) ( 'E' 203 ) 
+             ( 'i' 239 ) ( 'I' 207 ) ( 'o' 246 ) ( 'O' 214 ) 
+             ( 'u' 252 ) ( 'U' 220 ) ( 'y' 255 )
+  dsla  000
+  drin  176  ( 'a' 229 ) ( 'A' 197 )
+  dced  184  ( 'c' 231 ) ( 'C' 199 )
+  dapo  000
+  ddac  000
+  dogo  000
+  dcar  000

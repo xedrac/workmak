@@ -1,11 +1,11 @@
-// Colemash Keyboard Layout symbols for xkb on X.Org Server 7.x
+// Wormak-P Keyboard Layout symbols for xkb on X.Org Server 7.x
 // Originally proposed as a hybrid of the Workman and Colemak layouts
 // in the workmanlayout.com forum by the user "S1000"
 
 partial alphanumeric_keys
-xkb_symbols "colemash-p" {
+xkb_symbols "wormak-p" {
 
-    name[Group1]= "English (Colemash-P)";
+    name[Group1]= "English (Wormak-P)";
 
     include "us(basic)"
 
@@ -59,9 +59,9 @@ xkb_symbols "colemash-p" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "colemash-p-intl" {
+xkb_symbols "wormak-p-intl" {
 
-    name[Group1]= "English (Colemash-P, international with dead keys)";
+    name[Group1]= "English (Wormak-P, international with dead keys)";
 
     include "us(intl)"
 

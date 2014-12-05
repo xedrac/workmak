@@ -1,4 +1,4 @@
-# colemash-p.kmap for Linux console.
+# wormak.kmap for Linux console.
 
 alt_is_meta
 charset "iso-8859-15"  # use a ISO-8859-15 font, e.g.: consolechars -f lat9v-14
@@ -8,16 +8,16 @@ include "linux-with-alt-and-altgr"
 strings as usual
 
 keycode  41 =          grave    asciitilde       dead_tilde        asciitilde    nul
-keycode   2 =         exclam           one       exclamdown       onesuperior
-keycode   3 =             at           two        masculine       twosuperior    nul
-keycode   4 =     numbersign         three      ordfeminine     threesuperior    Escape
-keycode   5 =         dollar          four             cent          sterling    Control_backslash
-keycode   6 =        percent          five             euro               yen    Control_bracketright  # EuroSign               yen
-keycode   7 =    asciicircum           six       asciitilde        asciitilde 	 Control_asciicircum   # hstroke                Hstroke 
-keycode   8 =      ampersand         seven              eth               ETH    Control_underscore
-keycode   9 =       asterisk         eight            thorn             THORN    Delete
-keycode  10 =      parenleft          nine       asciitilde        asciitilde                          # leftsinglequotemark    leftdoublequotemark
-keycode  11 =     parenright          zero       asciitilde        asciitilde                          # rightsinglequotemark   rightdoublequotemark
+keycode   2 =            one        exclam       exclamdown       onesuperior
+keycode   3 =            two            at        masculine       twosuperior    nul
+keycode   4 =          three    numbersign      ordfeminine     threesuperior    Escape
+keycode   5 =           four        dollar             cent          sterling    Control_backslash
+keycode   6 =           five       percent             euro               yen    Control_bracketright  # EuroSign               yen
+keycode   7 =            six   asciicircum       asciitilde        asciitilde 	 Control_asciicircum   # hstroke                Hstroke 
+keycode   8 =          seven     ampersand              eth               ETH    Control_underscore
+keycode   9 =          eight      asterisk            thorn             THORN    Delete
+keycode  10 =           nine     parenleft       asciitilde        asciitilde                          # leftsinglequotemark    leftdoublequotemark
+keycode  11 =           zero    parenright       asciitilde        asciitilde                          # rightsinglequotemark   rightdoublequotemark
 keycode  12 =          minus    underscore       asciitilde        asciitilde 	 Control_underscore    # endash                 emdash
 keycode  13 =          equal          plus         multiply          division
                                                                                         
