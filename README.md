@@ -1,4 +1,4 @@
-wormak
+workmak
 ========
 
-Wormak keyboard layout files/installers for various platforms
+Workmak keyboard layout files/installers for various platforms

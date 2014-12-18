@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-Go directory where you have unpacked Dash
-Type: setxkbmap us; xmodmap xmodmap/xmodmap.dash && xset r 66
-=======
-Type: setxkbmap us; xmodmap xmodmap/xmodmap.wormak && xset r 66
->>>>>>> oldstate
+Type: setxkbmap us; xmodmap xmodmap/xmodmap.workmak && xset r 66
 To switch back to QWERTY type: setxkbmap us; xset -r 66

@@ -1,22 +1,21 @@
 # $FreeBSD$
-# Based on FreeBSD's us.iso.kbd
-# Wormak-P Layout
+# Workmak Layout
 #                                                         alt
 # scan                       cntrl          alt    alt   cntrl lock
 # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
 # ------------------------------------------------------------------
   000   nop    nop    nop    nop    nop    nop    nop    nop     O
   001   esc    esc    esc    esc    esc    esc    debug  esc     O
-  002   '!'    '1'    nop    nop    '1'    '!'    nop    nop     O
-  003   '@'    '2'    nul    nul    '2'    '@'    nul    nul     O
-  004   '#'    '3'    nop    nop    '3'    '#'    nop    nop     O
-  005   '$'    '4'    nop    nop    '4'    '$'    nop    nop     O
-  006   '%'    '5'    nop    nop    '5'    '%'    nop    nop     O
-  007   '^'    '6'    rs     rs     '6'    '^'    rs     rs      O
-  008   '&'    '7'    nop    nop    '7'    '&'    nop    nop     O
-  009   '*'    '8'    nop    nop    '8'    '*'    nop    nop     O
-  010   '('    '9'    nop    nop    '9'    '('    nop    nop     O
-  011   ')'    '0'    nop    nop    '0'    ')'    nop    nop     O
+  002   '1'    '!'    nop    nop    '1'    '!'    nop    nop     O
+  003   '2'    '@'    nul    nul    '2'    '@'    nul    nul     O
+  004   '3'    '#'    nop    nop    '3'    '#'    nop    nop     O
+  005   '4'    '$'    nop    nop    '4'    '$'    nop    nop     O
+  006   '5'    '%'    nop    nop    '5'    '%'    nop    nop     O
+  007   '6'    '^'    rs     rs     '6'    '^'    rs     rs      O
+  008   '7'    '&'    nop    nop    '7'    '&'    nop    nop     O
+  009   '8'    '*'    nop    nop    '8'    '*'    nop    nop     O
+  010   '9'    '('    nop    nop    '9'    '('    nop    nop     O
+  011   '0'    ')'    nop    nop    '0'    ')'    nop    nop     O
   012   '-'    '_'    us     us     '-'    '_'    us     us      O
   013   '='    '+'    nop    nop    '='    '+'    nop    nop     O
   014   bs     bs     del    del    bs     bs     del    del     O
@@ -24,8 +23,8 @@
   016   'q'    'Q'    dc1    dc1    'q'    'Q'    dc1    dc1     C
   017   'w'    'W'    etb    etb    'w'    'W'    etb    etb     C
   018   'r'    'R'    dc2    dc2    'r'    'R'    dc2    dc2     C
-  019   'd'    'D'    eot    eot    'd'    'D'    eot    eot     C
-  020   'p'    'P'    dle    dle    'p'    'P'    dle    dle     C
+  019   'p'    'P'    dle    dle    'p'    'P'    dle    dle     C
+  020   'b'    'B'    stx    stx    'b'    'B'    stx    stx     C
   021   'j'    'J'    nl     nl     'j'    'J'    nl     nl      C
   022   'l'    'L'    ff     ff     'l'    'L'    ff     ff      C
   023   'u'    'U'    nak    nak    'u'    'U'    nak    nak     C
@@ -51,9 +50,9 @@
   043   '\'    '|'    fs     fs     '\'    '|'    fs     fs      O
   044   'z'    'Z'    sub    sub    'z'    'Z'    sub    sub     C
   045   'x'    'X'    can    can    'x'    'X'    can    can     C
-  046   'v'    'V'    syn    syn    'v'    'V'    syn    syn     C
-  047   'c'    'C'    etx    etx    'c'    'C'    etx    etx     C
-  048   'b'    'B'    stx    stx    'b'    'B'    stx    stx     C
+  046   'c'    'C'    etx    etx    'c'    'C'    etx    etx     C
+  047   'd'    'D'    eot    eot    'd'    'D'    eot    eot     C
+  048   'v'    'V'    syn    syn    'v'    'V'    syn    syn     C
   049   'k'    'K'    vt     vt     'k'    'K'    vt     vt      C
   050   'm'    'M'    cr     cr     'm'    'M'    cr     cr      C
   051   ','    '<'    nop    nop    ','    '<'    nop    nop     O
