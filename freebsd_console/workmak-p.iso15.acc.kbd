@@ -26,7 +26,7 @@
   019   'p'    'P'    dle    dle    'ø'    'Ø'    dle    dle     C
   020   'b'    'B'    stx    stx    '~'    '~'    stx    stx     C
   021   'j'    'J'    nl     nl     '~'    '~'    nl     nl      C
-  022   'l'    'L'    ff     ff     '~'    '~'    ff     ff      C
+  022   'm'    'M'    cr     cr     '~'    '~'    cr     cr      C
   023   'u'    'U'    nak    nak    'ú'    'Ú'    nak    nak     C
   024   'y'    'Y'    em     em     'ü'    'Ü'    em     em      C
   025   ';'    ':'    nop    nop    'ö'    'Ö'    nop    nop     O
@@ -52,7 +52,7 @@
   047   'd'    'D'    eot    eot    duml   '~'    eot    eot     C
   048   'v'    'V'    syn    syn    '½'    '¼'    syn    syn     C
   049   'k'    'K'    vt     vt     drin   '~'    vt     vt      C
-  050   'm'    'M'    cr     cr     '~'    '~'    cr     cr      C
+  050   'l'    'L'    ff     ff     '~'    '~'    ff     ff      C
   051   ','    '<'    nop    nop    dced   '~'    nop    nop     O
   052   '.'    '>'    nop    nop    '~'    '~'    nop    nop     O
   053   '/'    '?'    nop    nop    '¿'    '~'    nop    nop     O
