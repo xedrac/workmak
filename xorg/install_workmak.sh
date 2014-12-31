@@ -83,11 +83,15 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-echo " * Copying Workmak symbols file to $SYMBOLS_PATH"
-cp $WORKMAK_XKB_FILE $SYMBOLS_PATH/
+grep -i "workmak" $SYMBOLS_PATH/us > /dev/null 2>&1
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to add Workmak symbols file"
-  exit 1
+  echo " * Adding Workmak symbols to $SYMBOLS_PATH/us" 
+  echo "" >> $SYMBOLS_PATH/us
+  cat workmak >> $SYMBOLS_PATH/us
+  if [ $? -ne 0 ]; then
+    echo "   *** Failed to add Workmak symbols to $SYMBOLS_PATH/us"
+    exit 1
+  fi
 fi
 
 echo " * Removing xkb cache files"
