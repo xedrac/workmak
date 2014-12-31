@@ -23,8 +23,8 @@ RULES_PATH=$XKB_PATH/rules
 SYMBOLS_PATH=$XKB_PATH/symbols
 XKB_CACHE_PATH=/var/lib/xkb
 
-XORG_LST_FILE=$RULES_PATH/xorg.lst
-XORG_XML_FILE=$RULES_PATH/xorg.xml
+LST_FILE=$RULES_PATH/evdev.lst
+XML_FILE=$RULES_PATH/evdev.xml
 
 TMP_FILE=./workmak_install.tmp
 
@@ -33,7 +33,7 @@ if [[ $(id -u) -ne 0 ]]; then
   exit 1;
 fi
 
-if [ ! -e "$XORG_XML_FILE" ]; then
+if [ ! -e "$XML_FILE" ]; then
   echo "It appears as though XKB files are not in $XKB_PATH" 
   echo "If your distribution stores them elsewhere, you can modify this script"
   echo "by changing the XKB_PATH field to point to the correct directory."
@@ -41,45 +41,45 @@ if [ ! -e "$XORG_XML_FILE" ]; then
   exit 1;
 fi
 
-#echo " * Copying $XORG_LST_FILE file to $TMP_FILE"
-cp $XORG_LST_FILE $TMP_FILE
+#echo " * Copying $LST_FILE file to $TMP_FILE"
+cp $LST_FILE $TMP_FILE
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to copy $XORG_LST_FILE to $TMP_FILE"
+  echo "   *** Failed to copy $LST_FILE to $TMP_FILE"
   exit 1
 fi
 
-echo " * Removing existing Workmak entries in $XORG_LST_FILE"
-awk '!/Workmak/' $TMP_FILE > $XORG_LST_FILE
+echo " * Removing existing Workmak entries in $LST_FILE"
+awk '!/Workmak/' $TMP_FILE > $LST_FILE
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to remove Workmak entries from $XORG_LST_FILE file"
+  echo "   *** Failed to remove Workmak entries from $LST_FILE file"
   exit 1
 fi
 
-#echo " * Copying $XORG_LST_FILE file to $TMP_FILE"
-cp $XORG_LST_FILE $TMP_FILE
+#echo " * Copying $LST_FILE file to $TMP_FILE"
+cp $LST_FILE $TMP_FILE
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to copy $XORG_LST_FILE to $TMP_FILE"
+  echo "   *** Failed to copy $LST_FILE to $TMP_FILE"
   exit 1
 fi
 
-echo " * Adding Workmak entry to $XORG_LST_FILE"
-awk '/Workman/ && !x {print "  workmak         us: English (Workmak)"; x=1} 1' $TMP_FILE > $XORG_LST_FILE 
+echo " * Adding Workmak entry to $LST_FILE"
+awk '/Workman/ && !x {print "  workmak         us: English (Workmak)"; x=1} 1' $TMP_FILE > $LST_FILE 
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to add Workmak entry to $XORG_LST_FILE file"
+  echo "   *** Failed to add Workmak entry to $LST_FILE file"
   exit 1
 fi
 
-#echo " * Copying $XORG_XML_FILE file to $TMP_FILE"
-cp $XORG_XML_FILE $TMP_FILE
+#echo " * Copying $XML_FILE file to $TMP_FILE"
+cp $XML_FILE $TMP_FILE
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to copy $XORG_XML_FILE to $TMP_FILE"
+  echo "   *** Failed to copy $XML_FILE to $TMP_FILE"
   exit 1
 fi
 
-echo " * Adding Workmak section to $XORG_XML_FILE file, if not already present"
-xsltproc workmak.xsl $TMP_FILE 1> $XORG_XML_FILE 2> /dev/null
+echo " * Adding Workmak section to $XML_FILE file, if not already present"
+xsltproc workmak.xsl $TMP_FILE 1> $XML_FILE 2> /dev/null
 if [ $? -ne 0 ]; then
-  echo "   *** Failed to add Workmak section to $XORG_XML_FILE file"
+  echo "   *** Failed to add Workmak section to $XML_FILE file"
   exit 1
 fi
 
