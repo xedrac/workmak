@@ -1,3 +1,15 @@
+Automated Installation Instructions:
+-------------------------------------------------------
+
+You can use the supplied installer script to add the layout automatically.
+The advantage of the script is that the layout will be selectable from the GUI's list
+of keyboard layouts, and not just via setxkbmap. (Although a reboot may be needed to take effect).
+
+
+
+Manual Installation Instructions:
+--------------------------------------------------------
+
 Depending on your linux distribution, you will likely install it with one of these two commands:
     sudo cp workmak /etc/X11/xkb/symbols/workmak
                      --or--
